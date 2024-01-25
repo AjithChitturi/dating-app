@@ -23,10 +23,10 @@ The SQLite database (user.db) consists of a 'users' table with columns for UID, 
 
 ## Getting Started
 Install the required packages:
-- pip install -r requirements.txt
+- ```pip install -r requirements.txt```
 
 Run the Streamlit app:
-- python -m streamlit run main.py
+- ```python -m streamlit run main.py```
 
 
 ## How to Use

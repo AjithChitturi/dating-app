@@ -6,7 +6,7 @@ from database import create_users_table
 def main():
     st.title("Dating App Dashboard")
     create_users_table()
-    num_users = st.number_input("Enter the number of users to scrape:", min_value=1, value=10)
+    num_users = st.number_input("Enter the number of users to scrape:")
 
     if st.button("Fetch and Store Users", key="fetch_button"):
         fetch_and_store_users(num_users)
@@ -15,7 +15,7 @@ def main():
         fetch_10_random_users()
 
     selected_user_uid = st.text_input("Enter UID of the user you want to select:")
-    num_nearest_users = st.number_input("Enter the number of nearest users to display:", min_value=1, value=5)
+    num_nearest_users = st.number_input("Enter the number of nearest users to display:")
 
     if st.button("Get Selected User and Display Nearest Users", key="get_selected_user_button"):
         if selected_user_uid:

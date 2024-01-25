@@ -23,7 +23,7 @@ The SQLite database (user.db) consists of a 'users' table with columns for UID, 
 
 ## Getting Started
 Install the required packages:
-- pip install streamlit folium requests sqlalchemy
+- pip install -r requirements.txt
 
 Run the Streamlit app:
 - python -m streamlit run main.py
